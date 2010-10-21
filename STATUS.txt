@@ -1,0 +1,276 @@
+
+!!! Incubation status reports
+!!2005-06-15
+{{{
+Status Report for the Incubator
+
+* is the STATUS file up to date? (also post link)
+
+  The cwiki file on the incubator site is  up to date as well as the STATUS file in the project directory.
+  http://incubator.apache.org/projects/wsrp4j.html
+
+* any legal, cross-project or personal issues  that still need to be addressed?
+ 
+  No.
+
+* what has been done for incubation since the last report?
+
+  1.  Annointed a new committer: dlouzan 
+  2.  Updated to Axiz 1.2 .
+  3.  Various bug fixes.
+  4.  Voted to mavenize.
+  5.  Voted to convert to Subversion.
+
+* plans and expectations for the next period?
+
+  1. Continue development work on outstanding WSRP 1.0 items 
+     (see TODO wiki: http://wiki.apache.org/wiki/apachewiki.cgi?WsrpToDoList)
+  2. Continue to build the community by encouraging developers 
+     to contribute code.  
+  3. Will probably ask for a vote to graduate from the Incubator into Portals.
+  4. Mavenize
+  5. Convert to Subversion
+  6. Refactor Provider interfaces to develop new uPortal provider
+
+* any recommendations for how incubation could run more smoothly for you?
+
+  None.
+
+* etc (your own thoughts on what is important would be helpful!) 
+}}}
+!!2004-07-19
+{{{
+Status Report for the Incubator
+
+* is the STATUS file up to date? (also post link)
+
+  The cwiki file on the incubator site is  up to date as well as the STATUS file in the project directory.
+  http://incubator.apache.org/projects/wsrp4j.html
+
+* any legal, cross-project or personal issues
+ that still need to be addressed?
+ 
+  No.
+
+* what has been done for incubation since the last report?
+
+  1.  Annointed a new committer: sgoldstein 
+  2.  Various bug fixes.
+  3.  Restructured the website and added the Portals logo.
+  4.  Migrated to the new moinmoin wiki.
+
+* plans and expectations for the next period?
+
+  1. Continue development work on outstanding WSRP 1.0 items 
+     (see TODO wiki: http://wiki.apache.org/wiki/apachewiki.cgi?WsrpToDoList)
+  2. Continue to build the community by encouraging developers 
+     to contribute code.  We are building a user population, but few 
+     outside developers have made code contributions.
+  3. Will probably ask for a vote to graduate from the Incubator into Portals.
+
+* any recommendations for how incubation could run more smoothly for you?
+
+  None.
+
+* etc (your own thoughts on what is important would be helpful!) 
+}}}
+
+!!2004-06-14
+{{{
+Status Report for the Incubator
+
+* is the STATUS file up to date? (also post link)
+
+  The cwiki file on the incubator site is  up to date. 
+  http://incubator.apache.org/projects/wsrp4j.html
+
+* any legal, cross-project or personal issues
+ that still need to be addressed?
+
+  It is expected that the WSRP4J project will graduate to the portals TLP.
+  
+* what has been done for incubation since the last report?
+
+  1.  Moved from Bugzilla to JIRA
+  2.  Various bug fixes.
+
+* plans and expectations for the next period?
+
+  1. Continue development work on outstanding WSRP 1.0 items 
+     (see TODO wiki: http://nagoya.apache.org/wiki/apachewiki.cgi?WsrpToDoList)
+  2. Continue to build the community by encouraging developers 
+     to contribute code.  We are building a user population, but few 
+     outside developers have made code contributions.
+
+* any recommendations for how incubation could run more smoothly for you?
+
+  None.
+
+* etc (your own thoughts on what is important would be helpful!) 
+}}}
+
+!!2004-01-19
+{{{
+Status report for the Incubator
+
+* is the STATUS file up to date? (also post link)
+
+  The cwiki file on the incubator site is more or less up to date. 
+  http://incubator.apache.org/projects/wsrp4j.html
+
+* any legal, cross-project or personal issues
+ that still need to be addressed?
+
+  There is a effort under way to create a portals super project 
+  that would have the WSRP4J project as a sub project.  This is a 
+  desireable thing for the WSRP4J project since it would give us 
+  focus as a portal-related technology.
+  
+* what has been done for incubation since the last report?
+
+  This is the first report.  However, since we started we have:
+  1.  Imported all the code into CVS.
+  2.  Granted committer rights to initial committers.
+  3.  Established mailing lists.
+  4.  Created Bugzilla components, although no bugs have been 
+      reported yet using Bugzilla.
+  5.  Created a website using Forrest.
+  6.  Create a TODO wiki to encourage collaboration on features 
+      and enhancements.
+  7.  Joined the Gump nightly build process.
+  8.  Voted to join portals.apache.org
+  9.  Voted to substitute JIRA for Bugzilla
+
+* plans and expectations for the next period?
+
+  1. Continue development work on outstanding WSRP 1.0 items 
+     (see TODO wiki: http://nagoya.apache.org/wiki/apachewiki.cgi?WsrpToDoList)
+  2. Continue to build the community by encouraging developers 
+     to contribute code.  We are building a user population, but few 
+     outside developers have made code contributions.
+
+* any recommendations for how incubation could run more smoothly for you?
+
+  I'm confused on the difference between a STATUS file and the cwiki 
+  page on the Incubator website.  Do I need both?
+
+* etc (your own thoughts on what is important would be helpful!) 
+}}}
+Incubator Exit Criteria
+(put an X next to item when it is complete):
+
+Copyrights & Licensing
+
+X -- Does all the software in the codebase have its copyright assigned to The
+     Apache Software Foundation?
+
+     	Yes. The code was converted to ASL2.0 on March 09, 2004. 
+
+
+X -- Is all the software in the codebase licensed (or multi-licensed) under the
+     Apache licence?
+
+     	Yes. IBM faxed the Licence Agreement for the code on 09/02/2003.
+
+
+Distribution rights
+
+X -- For all code included with the distribution that is not under the
+     Apache license, do we have the right to combine with Apache-licensed
+     code and redistribute?
+     Yes.
+
+X -- Is all source code distributed by the project covered by one or more
+     of the following approved licenses:  Apache, BSD, Artistic, MIT/X,
+     MIT/W3C, MPL 1.1, or something with essentially the same terms?
+     Yes. 
+
+Naming
+
+X -- Has the final name for the project decided?
+     Yes.  WSRP4J.
+
+X -- Does the codebase,mailing list,bug tracker contain the right name of the project?
+     Yes.
+
+Infrastructure
+
+X -- CVS modules created and committers added to avail file?
+     Yes:       http://cvs.apache.org/viewcvs.cgi/ws-wsrp4j/
+     avail|rubys,dims,jacob,pfisher,behl,jmacna,taylor,cziegeler,acoliver,sgala|ws-wsrp4j,ws-site,incubator,incubator-site
+
+X -- Are the developer, commit and user mailing lists set up and archived?
+	Developer: http://nagoya.apache.org/eyebrowse/SummarizeList?listId=173
+	User: http://nagoya.apache.org/eyebrowse/SummarizeList?listId=174
+	Commit: messages go to wsrp4j-dev@ws.apache.org
+
+X -- Bug tracking system enabled?
+	Yes.
+		http://nagoya.apache.org/jira
+
+X -- wiki based documentation site enabled?
+     	Yes.
+     	http://wiki.apache.org/portals/WSRP4J
+		
+
+X -- Has the project migrated to our infrastructure?
+     	Yes.
+
+Committers:
+
+X -- Have all of the active long-term volunteers been identified
+     and acknowledged as committers on the project?
+     	Yes.
+
+X -- Have all the commiters signed the CLA?
+     	Yes. 
+
+X -- Do they have accounts on cvs.apache.org?
+     	Yes.
+
+  -- Are there three or more independent committers?
+     	Almost!
+		3 Active committers from IBM (jacob, jmacna, pfisher)
+		2 Active Non-IBM committers (cziegeler, sgoldstein) 
+     	
+
+Collaborative Development:
+
+X -- Are project decisions being made in public by the committers?
+     	Yes.
+
+  -- Are the decision-making guidelines published and agreed to by
+     all of the committers?
+     	This is not well documented, but folks are following along anyway.
+
+X -- Does the documentation site has enough information on the architecure,design decisions and
+     modules?
+     	Yes. 
+
+X -- Has the community decided on a policy for the composition of its 'steering committee'?
+	The community expects to graduate into the Portals PMC.  Originally, it was thought
+        that the WSRP4J project would graduate into Web Services, but that changed when
+	Portals was formed.
+
+
+X -- Has the community, the graduation/new PMC of the project to which the codebase and community
+     will move at the end of incubation (if any), and the Incubator PMC, decided the
+     expected time frame of stay in incubator?
+	The Portals PMC, which is the expected TLP for WSRP4J has requested that we proceed
+	to graduate from Incubator.
+	
+
+
+X -- Has the community adopted the Apache voting rules and is otherwise following the Apache
+     guidelines?
+     Yes
+
+organisational acceptance:
+
+  -- Has the board accepted moving to a existing/new PMC?
+
+
+Incubator sign-off:
+
+ -- Has the Incubator decided that the project has accomplished all
+    of the above tasks?

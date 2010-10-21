@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 1999-2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+  <header> 
+    <title>Welcome to WSRP4J</title> 
+  </header> 
+  <body> 
+    <section><title>Introduction</title>
+      <p>
+      Integration of content and application into portals has been a
+      task requiring significant custom programming effort. Portal
+      vendors or organizations running portals had to write special
+      adapter portlets to allow portals to communicate with the
+      different applications and content providers to accommodate a
+      variety of interfaces and protocols. The <link
+      href="ext:oasis-wsrp">OASIS Web Services for Remote Portlets
+      (WSRP)</link> standard simplifies integration of remote
+      applications/content into portals so that portal administrators
+      can pick from a rich choice of services and integrate it in
+      their portal without programming effort. As a result, WSRP
+      becomes the means for content and application providers to
+      provide their services to organizations running portals in a
+      very easily consumable form.
+      </p>
+
+      <p>
+      The Apache WSRP4J open source project was initiated by IBM to
+      facilitate quick adoption of the WSRP standard by content and
+      application providers and portal vendors. They can use WSRP4J as
+      a platform for developing and hosting WSRP compliant web
+      services. The OASIS WSRP standard will enable thousands of
+      portals to aggregate content from tens of thousands of content
+      and application providers offering hundreds of thousands of
+      user-facing, pluggable web services for millions of end
+      users/devices.
+      </p>
+
+      <p>
+      We hope the WSRP4J project will kick start broad adoption of
+      the WSRP standard and result in a large number of cool WSRP
+      services running on free, open source Apache software.
+      </p>
+
+    </section>
+    <note><strong>Disclaimer</strong>
+      
+      WSRP4J is an incubated subproject under the sponsorship of the
+      Apache Software Foundation's (ASF) Web Services
+      project. Incubation is required of all newly accepted projects
+      until a further review indicates that the infrastructure,
+      communications, and decision making process have stabilized in
+      a manner consistent with other successful ASF projects. While
+      incubation status is not necessarily a reflection of the
+      completeness or stability of the code, it does indicate that
+      the project has yet to be fully endorsed by the ASF.
+      
+   </note>
+  </body>
+</document>

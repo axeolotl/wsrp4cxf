@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/webapp/WEB-INF/web.xml" optional="false" version="2.5" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/webapp" relative="/" />
+        </webroots>
+        <building>
+          <setting name="EXPLODED_URL" value="file://" />
+          <setting name="EXPLODED_ENABLED" value="false" />
+          <setting name="JAR_URL" value="file://$MODULE_DIR$/target/wsrp4j-proxyportlet-0.4-SNAPSHOT.war" />
+          <setting name="JAR_ENABLED" value="true" />
+          <setting name="BUILD_MODULE_ON_FRAME_DEACTIVATION" value="false" />
+          <setting name="BUILD_EXTERNAL_DEPENDENCIES" value="false" />
+          <setting name="EXCLUDE_EXPLODED_DIRECTORY" value="true" />
+          <setting name="RUN_JASPER_VALIDATION" value="false" />
+          <setting name="BUILD_ONLY_WEB_RESOURCES" value="false" />
+        </building>
+        <packaging>
+          <containerElement type="module" name="wsrp4j-commons-consumer">
+            <attribute name="method" value="5" />
+            <attribute name="URI" value="/WEB-INF/lib/wsrp4j-commons-consumer-0.4-SNAPSHOT.jar" />
+          </containerElement>
+          <containerElement type="module" name="wsrp4j-commons">
+            <attribute name="method" value="5" />
+            <attribute name="URI" value="/WEB-INF/lib/wsrp4j-commons-0.4-SNAPSHOT.jar" />
+          </containerElement>
+          <containerElement type="library" name="axis:axis:${axis.version}" level="module">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/axis-${axis.version}.jar" />
+          </containerElement>
+          <containerElement type="library" name="axis:axis-jaxrpc:${axis.version}" level="module">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/axis-jaxrpc-${axis.version}.jar" />
+          </containerElement>
+          <containerElement type="library" name="commons-lang:commons-lang:2.1" level="module">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/commons-lang-2.1.jar" />
+          </containerElement>
+          <containerElement type="library" name="commons-logging:commons-logging:1.0.4" level="module">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/commons-logging-1.0.4.jar" />
+          </containerElement>
+          <containerElement type="module" name="wsrp4j-persistence-xml">
+            <attribute name="method" value="5" />
+            <attribute name="URI" value="/WEB-INF/lib/wsrp4j-persistence-xml-0.4-SNAPSHOT.jar" />
+          </containerElement>
+          <containerElement type="library" name="org.apache.wsrp4j:wsrp4j-commons-producer:0.4-SNAPSHOT" level="module">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/wsrp4j-commons-producer-0.4-SNAPSHOT.jar" />
+          </containerElement>
+          <containerElement type="library" name="castor:castor:0.9.6" level="module">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/lib/castor-0.9.6.jar" />
+          </containerElement>
+          <containerElement type="module" name="wsrp4j-proxyportlet">
+            <attribute name="method" value="1" />
+            <attribute name="URI" value="/WEB-INF/classes" />
+          </containerElement>
+        </packaging>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <exclude-output />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="wsrp4j-commons-consumer" exported="" />
+    <orderEntry type="module" module-name="wsrp4j-commons" exported="" />
+    <orderEntry type="module-library" exported="">
+      <library name="axis:axis:${axis.version}">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/axis/axis/${axis.version}/axis-${axis.version}.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/axis/axis/${axis.version}/axis-${axis.version}-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/axis/axis/${axis.version}/axis-${axis.version}-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="axis:axis-jaxrpc:${axis.version}">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/axis/axis-jaxrpc/${axis.version}/axis-jaxrpc-${axis.version}.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/axis/axis-jaxrpc/${axis.version}/axis-jaxrpc-${axis.version}-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/axis/axis-jaxrpc/${axis.version}/axis-jaxrpc-${axis.version}-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-lang:commons-lang:2.1">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="commons-logging:commons-logging:1.0.4">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="wsrp4j-persistence-xml" exported="" />
+    <orderEntry type="module-library" exported="">
+      <library name="org.apache.wsrp4j:wsrp4j-commons-producer:0.4-SNAPSHOT">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/org/apache/wsrp4j/wsrp4j-commons-producer/0.4-SNAPSHOT/wsrp4j-commons-producer-0.4-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/org/apache/wsrp4j/wsrp4j-commons-producer/0.4-SNAPSHOT/wsrp4j-commons-producer-0.4-SNAPSHOT-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/org/apache/wsrp4j/wsrp4j-commons-producer/0.4-SNAPSHOT/wsrp4j-commons-producer-0.4-SNAPSHOT-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library name="castor:castor:0.9.6">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/castor/castor/0.9.6/castor-0.9.6.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/castor/castor/0.9.6/castor-0.9.6-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/castor/castor/0.9.6/castor-0.9.6-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.servlet:servlet-api:2.3">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="portlet-api:portlet-api:1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/portlet-api/portlet-api/1.0/portlet-api-1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/portlet-api/portlet-api/1.0/portlet-api-1.0-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/portlet-api/portlet-api/1.0/portlet-api-1.0-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="log4j:log4j:1.2.13">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/log4j/log4j/1.2.13/log4j-1.2.13.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/log4j/log4j/1.2.13/log4j-1.2.13-javadoc.jar!/" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/../../../.m2/repository/log4j/log4j/1.2.13/log4j-1.2.13-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntryProperties />
+  </component>
+</module>
+

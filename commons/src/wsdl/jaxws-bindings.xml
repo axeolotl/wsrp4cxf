@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jaxws:bindings
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    wsdlLocation="wsrp_v1_bindings.wsdl"
+    xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+  <jaxws:bindings node="wsdl:operation">
+    <jaxws:enableWrapperStyle>false</jaxws:enableWrapperStyle>
+  </jaxws:bindings>
+</jaxws:bindings>
+        

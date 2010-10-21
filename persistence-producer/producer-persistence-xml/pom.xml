@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!--+
+    | This is the main Maven file for wsrp4j-persistence-xml
+    | @version $Id: pom.xml 657256 2008-05-17 00:15:46Z esm $
+    +-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <parent>
+        <artifactId>wsrp4j-producer-persistence</artifactId>
+        <groupId>org.apache.wsrp4j</groupId>
+        <version>0.5-SNAPSHOT</version>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    
+    <artifactId>wsrp4j-producer-persistence-xml</artifactId>
+    <packaging>jar</packaging>
+    <name>WSRP4J Producer Persistence XML</name>
+    <description>
+        Provides an xml-based persistence mechanism for producers.
+    </description>
+    
+    <dependencies>
+        
+        <!-- Compile-time dependencies ============================ -->
+        
+        <dependency>
+            <artifactId>wsrp4j-producer-persistence-common</artifactId>
+            <groupId>org.apache.wsrp4j</groupId>
+            <version>${pom.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        
+        <dependency>
+            <artifactId>wsrp4j-commons-consumer</artifactId>
+            <groupId>org.apache.wsrp4j</groupId>
+            <version>${pom.version}</version>
+            <scope>compile</scope>
+        </dependency>                     
+        
+        <dependency>
+            <artifactId>castor</artifactId>
+            <groupId>org.codehaus.castor</groupId>
+            <version>${castor.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>commons-logging-api</artifactId>
+            <groupId>commons-logging</groupId>
+            <version>${commons-logging.version}</version>
+        </dependency>
+        
+        <!-- Runtime dependencies ================================= -->
+        
+        <dependency>
+            <artifactId>xercesImpl</artifactId>
+            <groupId>xerces</groupId>
+            <version>${xerces.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <!-- Provided dependencies ================================ -->
+        
+        <dependency>
+            <artifactId>servlet-api</artifactId>
+            <groupId>javax.servlet</groupId>
+            <version>${servlet-api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- Test dependencies ==================================== -->
+        
+        <dependency>
+            <artifactId>junit</artifactId>
+            <groupId>junit</groupId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <artifactId>log4j</artifactId>
+            <groupId>log4j</groupId>
+            <version>${log4j.version}</version>
+            <scope>test</scope>
+        </dependency>
+        
+    </dependencies>
+    
+</project>

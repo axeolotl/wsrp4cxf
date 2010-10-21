@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!--+
+    | This is the main Maven file for commons
+    | @version $Id: pom.xml 440043 2006-09-04 12:10:34Z dlouzan $
+    +-->
+<project>
+  <parent>
+    <artifactId>wsrp4j</artifactId>
+    <groupId>org.apache.wsrp4j</groupId>
+    <version>0.4-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>wsrp4j-commons</artifactId>
+  <packaging>jar</packaging>
+  <name>WSRP4J Commons</name>
+  <description>
+    WSRP Commons is a placeholder for code shared by the producer and the 
+    consumer.
+  </description>
+  <build>
+    <sourceDirectory>src/java</sourceDirectory>
+    <resources>
+        <resource>
+            <targetPath>org/apache/wsrp4j/commons/exception</targetPath>
+            <directory>src/resources</directory>
+            <includes>
+                <include>messages.properties</include>
+            </includes>
+        </resource>
+    </resources>
+    <!--plugins>
+        <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>wsdl2java</id>
+                    <phase>generate-sources</phase>
+                    <configuration>
+                        <tasks>
+                            <mkdir dir="target/generated-sources/wsdl"/>
+                            <taskdef
+                                    resource="axis-tasks.properties"
+                                    classpathref="maven.compile.classpath"/>
+                            <axis-wsdl2java
+                                    output="target/generated-sources/wsdl"
+                                    serverSide="true"
+                                    url="src/wsdl/wsrp_service.wsdl"/>
+                        </tasks>
+                    </configuration>
+                    <goals>
+                        <goal>wsdl2java</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins-->
+  </build>
+  <properties>
+    <cxf.version>2.1</cxf.version>
+  </properties>  
+  <dependencies>
+    <dependency>
+      <artifactId>portlet-api</artifactId>
+      <groupId>portlet-api</groupId>
+      <version>${portlet-api.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <artifactId>junit</artifactId>
+      <groupId>junit</groupId>
+      <version>${junit.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <artifactId>commons-lang</artifactId>
+      <groupId>commons-lang</groupId>
+      <version>${commons-lang.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>commons-logging</artifactId>
+      <groupId>commons-logging</groupId>
+      <version>${commons-logging.version}</version>
+    </dependency>
+
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-core</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+<!--
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-simple</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+-->
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+<!--
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-databinding-aegis</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-local</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+-->
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+<!--
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http-jetty</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-jms</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-management</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+-->
+    <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-common-utilities</artifactId>
+            <version>${cxf.version}</version>
+    </dependency>
+
+  </dependencies>
+</project>

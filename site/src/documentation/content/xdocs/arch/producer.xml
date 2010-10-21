@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 1999-2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+  <header> 
+    <title>WSRP Producer Architecture</title> 
+  </header> 
+  <body>
+    <p>
+    Producer and consumer are provided with a very modular
+    architecture enabling an easy exchange of module implementations.
+    All modules excel by interfaces based on the WSRP object model
+    hiding the runtime environment&apos;s (portal&apos;s) object model
+    and thus gaining independence of changes in the environment&apos;s
+    implementation or design.
+    </p>
+    <figure src="../images/WSRPArch3.png" alt="WSRP Producer Architecture"/>
+    <section><title>WSRPEngine</title>
+      <p>
+      The WSRPEngine is the WSRP implementation endpoint. This class
+      must be deployed in the app server (Tomcat) as a web service.  The
+      WSRPEngine implements the WSRP protocol specific ports
+      (=interfaces) and does the corresponding protocol handling. There
+      are four WSRP ports:
+      </p>
+      <dl>
+      <dt>Markup</dt> <dd>deals with Portlet invocation and Session handling</dd>
+      <dt>PortletManagement</dt> <dd>covers lifecycle and properties of portlets</dd>
+      <dt>Registration</dt> <dd>enables a consumer to register at the producer</dd>
+      <dt>ServiceDescription</dt> <dd>enables a consumer to discover the services that a producer provides</dd>
+      </dl>
+      <note>
+      To be able to reuse Portal functionality regarding session and
+      request handling when invoking a portlet the WSRPEngine must be
+      able to access the HttpServletRequest.
+      </note>
+    </section>
+    <section><title>ConsumerRegistry</title>
+      <p>
+      This component manages and provides access to the registered Consumers. 
+      </p>
+      </section>
+      <section><title>HandleGenerator</title>
+      <p>
+      This component is responsible for generating IDs / handles required
+      for the WSRP protocol handling.
+      </p>
+      </section>
+      <section><title>WSRP Object Model</title>
+      <p>
+      The WSRP object model is being generated from the WSRP specification&apos;s WSDL types.
+      </p>
+    </section>
+    <section><title>Provider</title>
+      <p>
+      The Provider is the access point for the WSRPEngine to the Provider
+      components which hide the provider (portal) implementation&apos;s
+      components required to handle and invoke portlets. All Subcomponents
+      wrap corresponding provider components and map the WSRP object model
+      to the provider object model.
+      </p>
+    </section>
+    <section><title>Portlet Invoker</title>
+      <p>
+      The PortletInvoker wraps the Provider&apos;s invocation mechanisms and
+      provides the Provider with the required environment.
+      </p>
+      </section>
+      <section><title>Description Handler</title>
+      <p>
+      The DescriptionHandler manages and provides the description of the
+      provider regarding configuration properties like registration or
+      session handling policy, etc.  It moreover provides the descriptions
+      of the provided portlets depending on the registration.
+      </p>
+    </section>
+    <section><title>PortletPool</title>
+      <p>
+      The PortletPool manages the portlet instances and is responsible for
+      the portlets&apos; lifecycle management (clone, destroy).
+      </p>
+      </section>
+      <section><title>Portlet State Manager</title>
+      <p>
+      The PortletStateMananger enables a Producer to access a portlet&apos;s
+      state as a blob that than can be delegate to the consumer to be stored
+      on consumer side.
+      </p>
+    </section>
+    <section><title>Session Handler</title>
+      <p>
+      No additional session handling implementation for the Pluto provider
+      is required as the session handling concept is completely HTTP
+      (cookie) based and relies on consumer&apos; cookie handling.
+      </p>
+    </section>
+    <section><title>URL Composer</title>
+      <p>
+      The URLComposer must be used for WSRP triggered portlet invocation to
+      create WSRP URLs instead of the portal&apos;s URL handling
+      implementation. Therefore the URLComposer is being used by WSRP&apos;s
+      version of the DynamicInformationProvider which is being used by the
+      Portlet API implementation to generate portlet URLs. There are two
+      ways how URLs can be composed in a WSRP environment:
+      </p>
+      <ol>
+	<li>
+	Via templates that represent URLs that are valid on Consumer side and
+	contain placeholders for all portlet specific URL components.
+	</li>
+	<li>
+	Via URL rewriting. In that case WSRP specific URLs are being composed
+	that will have to be rewritten by the Consumer.
+	</li>
+      </ol>
+    </section>
+  </body>
+</document>
+
+
+
+
+

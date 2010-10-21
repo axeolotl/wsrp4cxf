@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!--+
+    | This is the main Maven file
+    | @version $Id: pom.xml 408860 2006-05-23 09:39:32Z dlouzan $
+    +-->
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.wsrp4j</groupId>
+  <artifactId>wsrp4j</artifactId>
+  <packaging>pom</packaging>
+  <name>WSRP4J</name>
+  <version>0.4-SNAPSHOT</version>
+  <description>
+    WSRP4J is the Java language reference implementation of the OASIS WSRP
+    specification, which is a web services protocol for aggregating content
+    and interactive web applications from remote sources. WSRP allows
+    content and application providers to provide their services to
+    organizations running portals in a very easily consumable form.
+  </description>
+  <url>http://portals.apache.org/wsrp4j</url>
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://issues.apache.org/jira/secure/BrowseProject.jspa?id=10464</url>
+  </issueManagement>    
+  <inceptionYear>2003</inceptionYear>
+  <mailingLists>
+    <mailingList>
+      <name>WSRP4J Developer List</name>
+      <subscribe>wsrp4j-dev-subscribe@portals.apache.org</subscribe>
+      <unsubscribe>wsrp4j-dev-unsubscribe@portals.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/portals-wsrp4j-dev/</archive>
+    </mailingList>
+    <mailingList>
+      <name>WSRP4J User List</name>
+      <subscribe>wsrp4j-user-subscribe@portals.apache.org</subscribe>
+      <unsubscribe>wsrp4j-user-unsubscribe@portals.apache.org</unsubscribe>
+      <archive>http://mail-archives.apache.org/mod_mbox/portals-wsrp4j-user/</archive>
+    </mailingList>
+  </mailingLists>   
+  <developers>
+    <developer>
+      <id>rubys</id>
+      <name>Sam Ruby</name>
+      <email>rubys.at.apache.org</email>
+      <roles>
+        <role>Mentor</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>dims</id>
+      <name>Davanum Srinivas</name>
+      <email>dims@apache.org</email>
+      <roles>
+        <role>Mentor</role>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>jacob</id>
+      <name>Richard Jacob</name>
+      <email>jacob@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>taylor</id>
+      <name>David Sean Taylor</name>
+      <email>taylor@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>jmacna</id>
+      <name>Julie MacNaught</name>
+      <email>jmacna@apache.org</email>
+      <organization>IBM Research</organization>
+      <organizationUrl>http://www.research.ibm.com/</organizationUrl>
+      <roles>
+        <role>Committer</role>
+      </roles>
+      <timezone>-4</timezone>
+    </developer>
+    <developer>
+      <id>behl</id>
+      <name>Stefan Behl</name>
+      <email>behl@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>cziegeler</id>
+      <name>Carsten Ziegeler</name>
+      <email>cziegeler@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>pfisher</id>
+      <name>Peter Fischer</name>
+      <email>pfisher@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>sgala</id>
+      <name>Santiago Gala</name>
+      <email>sgala@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>acoliver</id>
+      <name>Andrew C. Oliver</name>
+      <email>acoliver@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>sgoldstain</id>
+      <name>Scott Goldstein</name>
+      <email>sgoldstain@apache.org</email>
+      <roles>
+        <role>Committer</role>
+      </roles>
+    </developer>
+    <developer>
+      <id>dlouzan</id>
+      <name>Diego Louzán</name>
+      <email>dlouzan@apache.org</email>
+      <url>http://wiki.apache.org/general/DiegoLouzan</url>
+      <organization>University of A Coruña</organization>
+      <organizationUrl>http://www.fi.udc.es/</organizationUrl>
+      <roles>
+        <role>Committer</role>
+      </roles>
+      <timezone>+2</timezone>
+    </developer>
+  </developers>
+  <contributors>
+    <contributor>
+      <name>Vishal Goenka</name>
+      <email>vgoenka@sungardsct.com</email>
+    </contributor>
+    <contributor>
+      <name>Michel Alessandrini</name>
+      <email>wsrp@gmx-topmail.de</email>
+    </contributor>
+  </contributors>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/portals/wsrp4j/trunk</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/portals/wsrp4j/trunk</developerConnection>
+    <url>http://svn.apache.org/viewcvs.cgi/portals/wsrp4j/trunk/</url>
+  </scm>
+  <organization>
+    <name>Apache Software Foundation</name>
+    <url>http://portals.apache.org/</url>
+  </organization>
+  <properties>
+    <!-- Dependency Version Properties -->
+    <castor.version>0.9.6</castor.version>
+    <commons-lang.version>2.1</commons-lang.version>
+    <commons-discovery.version>0.2</commons-discovery.version>
+    <commons-logging.version>1.0.4</commons-logging.version>
+    <junit.version>3.8.1</junit.version>
+    <log4j.version>1.2.13</log4j.version>
+    <portlet-api.version>1.0</portlet-api.version>
+    <servlet-api.version>2.3</servlet-api.version>
+    <xerces.version>2.7.1</xerces.version>
+    <xml-apis.version>1.0.b2</xml-apis.version>
+  </properties>
+  	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  <modules>
+    <module>commons</module>
+    <module>commons-consumer</module>
+    <module>consumer-proxyportlet</module>
+    <module>persistence-xml</module>
+    <module>testportlet</module>
+  </modules>
+</project>

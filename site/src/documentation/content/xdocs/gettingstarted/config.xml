@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 1999-2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+  <header> 
+    <title>WSRP4J Configuration</title> 
+  </header>
+  <body>
+    <section>
+      <title>Producer Configuration</title>
+      <p>
+      The WSRP4J embeds Pluto as its portlet container.  To add a
+      portlet to be hosted by the WSRP4J Producer, use Pluto's deploy
+      function to deploy the portlet's WAR file.  The testportlet that
+      comes with WSRP4J uses the following maven goal to deploy itself
+      to Pluto.  This code can be found in wsrp4j/testport/maven.xml.
+      </p>
+      <source>
+    &lt;goal name="tomcat:deploy"&gt;
+        &lt;java classname="org.apache.pluto.driver.deploy.CLI" fork="yes"&gt;
+            &lt;classpath&gt;
+                &lt;path refid="maven.dependency.classpath"/&gt;
+                &lt;pathelement path="${maven.build.dest}"/&gt;
+            &lt;/classpath&gt;
+            &lt;arg value="-verbose"/&gt;
+            &lt;arg value="-p"/&gt;&lt;arg value="${maven.tomcat.home}/webapps/wsrp4j-producer"/&gt;
+            &lt;arg value="-d"/&gt;&lt;arg value="${maven.tomcat.home}/webapps"/&gt;
+            &lt;arg value="${basedir}/target/${maven.war.final.name}"/&gt;
+         &lt;/java&gt;
+    &lt;/goal&gt;
+      </source>
+    </section>
+    
+    <section>
+      <title>Consumer Configuration (SwingConsumer)</title>
+      <p>
+        Once you have your portlets configured on the producer side, to add a
+        portlet to the SwingConsumer you will need to create an xml file in
+        driver/SwingConsumer/persistence/portlets.</p>
+      <p>Use the existing files as a guide.</p>
+    </section>
+    
+    <section>
+      <title>Consumer Configuration (ProxyPortlet)</title>
+      <p>
+        You'll need some portal environment for using the ProxyPortlet component
+        bundled with WSRP4J. The WSRP4J team has tested PlutoPortal, the minimal
+        portal component included with the Pluto distribution.
+      </p>
+      <p>
+        Firstly, make sure you have your portlets correctly configured in the
+        producer component.
+      </p>
+      <ol>
+        <li>
+          Configure your producer endpoint urls in the
+          proxyportlet/WEB-INF/persistence/producers/ directory. You have to
+          create one file per producer, the naming being
+          org.apache.wsrp4j.consumer.driver.ProducerImpl@&lt;name&gt;.xml, where
+          &lt;name&gt; is a name you choose. If you are
+          consuming you own local portlets, you don't have to do nothing, as
+          there's a file org.apache.wsrp4j.consumer.driver.ProducerImpl@wsrp4j-8081.xml
+          file with local configuration. Use one of the existing files as
+          guidance. Be sure to assign a unique producer id to your producer.
+          An example would be:
+          <source><![CDATA[
+<Producer id="100">
+    <markup-interface-url>
+        http://localhost:8081/wsrp/wsrp4j/WSRPBaseService
+    </markup-interface-url>
+    <service-description-interface-url>
+        http://localhost:8081/wsrp/wsrp4j/WSRPServiceDescriptionService
+    </service-description-interface-url>
+    <registration-interface-url>
+        http://localhost:8081/wsrp/wsrp4j/WSRPRegistrationService
+    </registration-interface-url>
+    <portlet-management-interface-url>
+        http://localhost:8081/wsrp/wsrp4j/WSRPPortletManagementService
+    </portlet-management-interface-url>
+
+    <registration-data>
+        <consumer-name>WSRP4J Proxy Portlet</consumer-name>
+        <consumer-agent>WSRP4J Proxy Portlet</consumer-agent>
+    </registration-data>
+</Producer>]]></source>
+          Remember that the actual urls are configured in the tunnel.sh file
+          in the wsrp4j/tools/ directory. You could add one tunnel.sh file
+          per producer (tunnel-ibm.sh, tunnel-bea.sh, etc) to be able to
+          distinguish each other network traffic.
+        </li>
+        <li>
+          At this point you have to remember your producer id (e.g. "100") and
+          your remote portlet identifier configured in the producer
+          (e.g. "0.1").
+        </li>
+        <li>
+          Now it's time to configure PlutoPortal. Please refer to
+          <link href="http://portals.apache.org/pluto">Pluto website</link>
+          on how to build &amp; install it. There are two files involved,
+          both of them in the pluto/WEB-INF/data/ directory: pageregistry.xml
+          and portletentityregistry.xml.
+        </li>
+        <li>
+          The file portletentityregistry.xml controls the portlet applications
+          deployed by PlutoPortal. You have to create a new application element
+          like this:
+          <source><![CDATA[
+<application id="5">
+    <definition-id>proxyportlet</definition-id>
+    <portlet id="1">
+        <definition-id>proxyportlet.ProxyPortlet</definition-id>
+        <preferences>
+            <pref-name>wsrp_portlet_handle</pref-name>
+            <pref-value>0.1</pref-value>
+            <read-only>false</read-only>
+        </preferences>
+        <preferences>
+            <pref-name>wsrp_producer_id</pref-name>
+            <pref-value>100</pref-value>
+            <read-only>false</read-only>
+        </preferences>
+    </portlet>
+</application>]]></source>
+          The important lines are the wsrp_portlet_handle and wsrp_producer_id
+          preferences. The former has to be a portlet handle configured on the
+          producer ("0.1" in step 2), the latter it's the assigned producer id
+          ("100" in step 2). The configuration above creates a portlet
+          application in PlutoPortal with id "5.1", that accesses the remote
+          portlet "0.1" in the producer with id "100".
+        </li>
+        <li>
+          Finally, the file pageregistry.xml controls the portal pages layout.
+          You can find more information on
+          <link href="http://portals.apache.org/pluto">Pluto website</link>, but
+          if you add a line like this:
+          <source><![CDATA[
+<fragment name="row10" type="row">
+    <fragment name="col10" type="column">
+        <fragment name="p10" type="portlet">
+            <property name="portlet" value="5.1"/>
+        </fragment>
+    </fragment>
+</fragment>]]></source>
+          with unique identifiers "row10", "col10" and "p10", you'll get your
+          portlet displayed when you point your browser to PlutoPortal. The
+          property "portlet" has value "5.1" as that is the portlet application
+          we configured in the previous step.
+        </li>
+      </ol>
+    </section>
+  </body>
+</document>
+
+
+

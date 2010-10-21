@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 1999-2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+  <header> 
+    <title>WSRP Architecture</title> 
+  </header> 
+<body>
+<p>
+The <link href="ext:oasis-wsrp">OASIS WSRP</link> 
+standard defines pluggable, user-facing, interactive web
+services with a common, well-defined interface and protocol for
+processing user interactions and providing presentation fragments
+suitably for aggregation by portals. WSRP standardizes web
+services at the presentation layer on top of the existing web
+services stack, builds on the existing web services standards and
+will leverage additional web services standards efforts, such as
+security efforts now underway, as they become available. The WSRP
+interfaces are defined in the Web Services Description Language
+(WSDL). In addition, WSRP defines metadata for self-description
+for publishing and finding WSRP services in registries. All WSRP
+services are required to implement a SOAP binding and optionally
+may support additional bindings.
+</p>
+<p>
+In the definition of the WSRP standard and the 
+<link href="ext:jsr168">JSR 168</link>, 
+the OASIS Technical Committee and the JSR 168 Expert group have
+closely collaborated to make sure that that both fit together well
+in portal architectures. JSR 168 compliant portlets can be exposed
+as WSRP compliant web services and conversely, WSRP services can
+be integrated through generic portlet proxies written to the
+Portlet API (see Figure below).
+</p>
+<figure src="../images/WSRPArch1.png" alt="Portal Overview"/>
+<p>
+The WSRP4J project provides the WSRP4J Producer, which allows
+implementing such WSRP compliant services based on a free, open
+source software stack consisting of Tomcat, Axis and WSRP4J which
+in turn includes Pluto, the JSR 168 reference implementation. In
+addition, the WSRP4J project provides a generic proxy portlet
+written to the Portlet API, the WSRP4J Consumer (see Figure
+below).
+</p>
+<figure src="../images/WSRPArch2.png" alt="WSRP4J Components"/>
+</body>
+</document>

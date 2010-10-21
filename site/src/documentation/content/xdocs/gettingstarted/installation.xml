@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright 1999-2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V1.2//EN" "http://apache.org/forrest/dtd/document-v12.dtd">
+<document> 
+  <header> 
+    <title>Installation</title> 
+  </header> 
+  <body>
+    <section><title>Prerequisites</title>
+    <ol>
+    <li>JDK 1.5.0 or higher</li>
+    <li>Subversion Client</li>
+    <li>Maven 1.0.2 </li>
+    <li>Tomcat 5.5, although other versions may work</li>
+    </ol>
+    </section>
+    <section><title>Downloading</title>
+    <p>
+    Obtain WSRP4J from Subversion.  The instructions are <link
+    href="site:cvs">here</link>.
+    </p>
+    </section>
+    <section><title>Project Components</title>
+    <p>
+    The WSRP4J Project is divided into the following components:
+    </p>
+    <ol>
+      <li>producer</li>
+      <li>consumer</li>
+      <li>commons</li>
+      <li>commons-producer</li>
+      <li>commons-consumer</li>
+      <li>consumer-swingconsumer</li>
+      <li>testportlet</li>
+    </ol>
+    </section>
+    
+    <section><title>Using Maven</title>
+    <p>
+    To build WSRP4J, execute the following maven command:
+    </p>
+    <source>
+    maven build
+    </source>
+    <p>
+    To build and install the WSRP4J Producer on Tomcat, execute the following maven command:
+    </p>
+    <source>
+    maven deploy-producer
+    </source>
+
+    <p>
+    Next: <link href="execution.html">Run the Consumer. </link>
+
+    </p>
+
+    </section>
+  </body>
+</document>
+

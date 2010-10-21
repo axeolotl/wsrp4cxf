@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!--
+  Copyright 1999-2005 The Apache Software Foundation
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!--
+Forrest site.xml
+
+This file contains an outline of the site's information content.  It is used to:
+- Generate the website menus (though these can be overridden - see docs)
+- Provide semantic, location-independent aliases for internal 'site:' URIs, eg
+<link href="site:changes"> links to changes.html (or ../changes.html if in
+  subdir).
+- Provide aliases for external URLs in the external-refs section.  Eg, <link
+  href="ext:cocoon"> links to http://xml.apache.org/cocoon/ 
+
+See http://xml.apache.org/forrest/linking.html for more info
+-->
+
+<site label="WSRP4J" href="" xmlns="http://apache.org/forrest/linkmap/1.0" tab="">
+
+  <about label="About WSRP4J">
+    <index label="Welcome" href="index.html" description="Welcome to WSRP4J"/>
+    <news label="News" href="news.html" description="WSRP in the News"/>
+    <link6 label="WSRP4J Incubator Status" href="ext:incubator-wsrp4j"/>
+    <!--<status label="Status" href="status.html" description="Status"/>-->
+    <!--<changes label="Changes" href="changes.html" description="History of Changes" />-->
+  </about>                           
+
+  <architecture label="Architecture" href="arch/" tab="architecture">
+      <arc label="Overview" href="index.html" description="Architecture Overview"/>
+      <consumer-arch label="Consumer" href="consumer.html" description="Architecture of WSRP Consumer"/>
+      <producer-arch label="Producer" href="producer.html" description="Architecture of WSRP Producer"/>
+  </architecture>
+  
+  <gettingStarted label="Getting Started" href="gettingstarted/" tab="gettingstarted" >
+    <gs label="Overview" href="index.html" description="Getting Started"/>
+    <installation label="Installation" href="installation.html" description="Installation Instructions"/>
+    <execution label="Execution" href="execution.html" description="Execution Instructions"/>
+    <configuration label="Configuration" href="config.html" description="Configuration Instructions"/>
+    <faq label="FAQ" href="faq.html" description="Frequently Asked Questions"/>
+  </gettingStarted>
+
+  <contributing label="Get Involved" href="contributing/" tab="contributing">
+    <!--<gi label="Overview" href="index.html" description="Getting Involved"/>-->
+    <cvs label="CVS and SVN Repositories" href="cvs.html" description="How to see source"/>
+    <link5 label="WSRP4J Wiki Pages" href="ext:wiki"/>
+    <link4 label="WSRP4J TODO Wiki" href="ext:todo"/>
+    <bugs label="Bugs (JIRA)" href="ext:jira" description="Link to JIRA"/>
+    <mail label="Mailing Lists" href="mail.html" description="Mailing Lists"/>
+  </contributing>  
+
+  <linksToRelated label="Links">
+    <link1 label="OASIS WSRP" href="ext:oasis-wsrp"/>
+    <link5 label="Portals TLP" href="ext:portals"/>
+    <link2 label="Pluto" href="ext:pluto"/>
+    <link3 label="Tomcat" href="ext:tomcat"/>
+    <link4 label="Incubator" href="ext:incubator"/>
+  </linksToRelated>
+  
+
+  <all>
+    <whole_site_html label="Whole Site HTML" href="site.html"/>
+    <whole_site_html label="Whole Site PDF" href="site.pdf"/>
+  </all>
+
+  <external-refs>
+    <oasis href="http://www.oasis-open.org/">
+      <oasis-wsrp href="committees/tc_home.php?wg_abbrev=wsrp"/>
+      <wsrp-spec href="committees/download.php/3343/oasis-200304-wsrp-specification-1.0.pdf"/>
+    </oasis>
+    <apache href="http://apache.org"/>
+    <jakarta href="http://jakarta.apache.org/">
+      <tomcat href="tomcat/"/>
+    </jakarta>
+    <portals href="http://portals.apache.org/">
+      <pluto href="pluto/"/>
+      <wsrp4j href="wsrp4j/"/>
+    </portals>
+    <incubator href="http://incubator.apache.org/">
+      <incubator-wsrp4j href="projects/wsrp4j.html"/>
+    </incubator>
+    <xml.apache.org href="http://xml.apache.org/">
+      <forrest href="forrest/">
+        <validation href="validation.html"/>
+        <webapp href="your-project.html#webapp"/>
+        <document-v11 href="document-v11.html"/>
+      </forrest>
+      <cocoon href="cocoon/"/>
+    </xml.apache.org>
+    <jira href="http://issues.apache.org/jira/"/>
+    <todo href="http://wiki.apache.org/portals/WSRP4JTodoList"/>
+    <wiki href="http://wiki.apache.org/portals/WSRP4J"/>         
+    <jsr168 href="http://www.jcp.org/en/jsr/detail?id=168"/>
+    <xml2003 href="http://www.idealliance.org/papers/dx_xml03/papers/04-06-05/04-06-05.html"/>
+  </external-refs>
+
+</site>
