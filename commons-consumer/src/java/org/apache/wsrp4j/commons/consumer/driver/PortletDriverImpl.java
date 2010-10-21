@@ -21,37 +21,7 @@ import java.util.Arrays;
 import oasis.names.tc.wsrp.v1.intf.WSRPV1PortletManagementPortType;
 import oasis.names.tc.wsrp.v1.intf.WSRPV1MarkupPortType;
 import oasis.names.tc.wsrp.v1.intf.*;
-import oasis.names.tc.wsrp.v1.types.BlockingInteractionResponse;
-import oasis.names.tc.wsrp.v1.types.ClientData;
-import oasis.names.tc.wsrp.v1.types.CookieProtocol;
-import oasis.names.tc.wsrp.v1.types.DestroyPortletsResponse;
-import oasis.names.tc.wsrp.v1.types.InteractionParams;
-import oasis.names.tc.wsrp.v1.types.InvalidCookieFault;
-import oasis.names.tc.wsrp.v1.types.MarkupContext;
-import oasis.names.tc.wsrp.v1.types.MarkupParams;
-import oasis.names.tc.wsrp.v1.types.MarkupResponse;
-import oasis.names.tc.wsrp.v1.types.PortletContext;
-import oasis.names.tc.wsrp.v1.types.PortletDescription;
-import oasis.names.tc.wsrp.v1.types.PortletDescriptionResponse;
-import oasis.names.tc.wsrp.v1.types.PortletPropertyDescriptionResponse;
-import oasis.names.tc.wsrp.v1.types.PropertyList;
-import oasis.names.tc.wsrp.v1.types.RegistrationContext;
-import oasis.names.tc.wsrp.v1.types.ReturnAny;
-import oasis.names.tc.wsrp.v1.types.RuntimeContext;
-import oasis.names.tc.wsrp.v1.types.ServiceDescription;
-import oasis.names.tc.wsrp.v1.types.StateChange;
-import oasis.names.tc.wsrp.v1.types.Templates;
-import oasis.names.tc.wsrp.v1.types.UserContext;
-import oasis.names.tc.wsrp.v1.types.ClonePortlet;
-import oasis.names.tc.wsrp.v1.types.DestroyPortlets;
-import oasis.names.tc.wsrp.v1.types.GetMarkup;
-import oasis.names.tc.wsrp.v1.types.GetPortletDescription;
-import oasis.names.tc.wsrp.v1.types.GetPortletProperties;
-import oasis.names.tc.wsrp.v1.types.GetPortletPropertyDescription;
-import oasis.names.tc.wsrp.v1.types.InitCookie;
-import oasis.names.tc.wsrp.v1.types.PerformBlockingInteraction;
-import oasis.names.tc.wsrp.v1.types.ReleaseSessions;
-import oasis.names.tc.wsrp.v1.types.SetPortletProperties;
+import oasis.names.tc.wsrp.v1.types.*;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -240,10 +210,14 @@ public class PortletDriverImpl implements PortletDriver {
         return markupParams;
     }
 
-    private RuntimeContext getRuntimeContext(WSRPBaseRequest request) {
+    private RuntimeContext getRuntimeContext(WSRPBaseRequest request, boolean haveNamespace) {
         RuntimeContext runtimeContext = new RuntimeContext();
         runtimeContext.setUserAuthentication(consumerEnv.getUserAuthentication());
         runtimeContext.setPortletInstanceKey(request.getPortletInstanceKey());
+
+      if(haveNamespace) {
+        // in an action request, we don't have a RenderResponse
+        // so we cannot get a namespace prefix etc.
 
         URLTemplateComposer templateComposer = consumerEnv.getTemplateComposer();
         if (templateComposer != null) {
@@ -288,6 +262,7 @@ public class PortletDriverImpl implements PortletDriver {
                     true, true, true));
             runtimeContext.setTemplates(templates);
         }
+      }
 
         runtimeContext.setSessionID(request.getSessionID());
         runtimeContext.getExtensions().clear();
@@ -332,7 +307,9 @@ public class PortletDriverImpl implements PortletDriver {
         }
 
         interactionParams.setInteractionState(actionRequest.getInteractionState());
-        interactionParams.getFormParameters().addAll(Arrays.asList(actionRequest.getFormParameters()));
+      NamedString[] formParameters = actionRequest.getFormParameters();
+      if(formParameters != null)
+        interactionParams.getFormParameters().addAll(Arrays.asList(formParameters));
         // interactionParams.setUploadContexts(null);
         // interactionParams.setExtensions(null);
 
@@ -363,7 +340,7 @@ public class PortletDriverImpl implements PortletDriver {
 
                 request.setPortletContext(getPortlet().getPortletContext());
                 request.setMarkupParams(getMarkupParams(markupRequest));
-                request.setRuntimeContext(getRuntimeContext(markupRequest));
+                request.setRuntimeContext(getRuntimeContext(markupRequest, true));
 
                 RegistrationContext regCtx = producer.getRegistrationContext();
                 if (regCtx != null)
@@ -454,7 +431,7 @@ public class PortletDriverImpl implements PortletDriver {
             request.setPortletContext(getPortlet().getPortletContext());
             request.setInteractionParams(getInteractionParams(actionRequest));
             request.setMarkupParams(getMarkupParams(actionRequest));
-            request.setRuntimeContext(getRuntimeContext(actionRequest));
+            request.setRuntimeContext(getRuntimeContext(actionRequest, false));
 
             RegistrationContext regCtx = producer.getRegistrationContext();
             if (regCtx != null)

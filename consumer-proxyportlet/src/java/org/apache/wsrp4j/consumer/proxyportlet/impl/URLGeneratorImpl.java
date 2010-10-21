@@ -37,8 +37,6 @@ import org.apache.wsrp4j.commons.util.WindowStates;
  */
 public class URLGeneratorImpl implements URLGenerator {
     
-    private static URLGeneratorImpl instance;
-    
     private RenderResponse renderResponse;
     private Map consumerParameters;
     
@@ -57,17 +55,11 @@ public class URLGeneratorImpl implements URLGenerator {
             throw new IllegalArgumentException("config must not be null");
         }
         
-        if (instance == null) {
-            
-            instance = new URLGeneratorImpl(response);
-            
-        } else {
-            instance.setRenderResponse(response);
-        }
-        
+      if(rpURL == null)
         setResourceProxyURL(config);
         
-        return instance;
+      return new URLGeneratorImpl(response);
+
     }
     
     /**
@@ -85,19 +77,12 @@ public class URLGeneratorImpl implements URLGenerator {
         this.renderResponse = response;
     }
     
-    public void setRenderResponse(RenderResponse response) {
-        if (response != null) {
-            this.renderResponse = response;
-        }
-    }
-    
     public void setConsumerParameters(Map consumerParameters) {
         if (consumerParameters != null) {
             this.consumerParameters = consumerParameters;
         }
     }
-    
-    
+
     public String getBlockingActionURL(Map params) {
         PortletURL url = renderResponse.createActionURL();
         
