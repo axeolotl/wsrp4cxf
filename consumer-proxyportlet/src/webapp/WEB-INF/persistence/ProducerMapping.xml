@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Object Mapping DTD Version 1.0//EN"
-                         "http://castor.exolab.org/mapping.dtd">
+                         "http://castor.org/mapping.dtd">
 
 <!--
 Copyright 2003-2005 The Apache Software Foundation.
@@ -127,33 +127,29 @@ limitations under the License.
         </field>
 
         <field name="ConsumerModes"
-               type="java.lang.String" collection="array"
+               type="java.lang.String" collection="collection"
                get-method="getConsumerModes"
-               set-method="setConsumerModes"
                required="false">
             <bind-xml name="supported-mode"/>
         </field>
 
         <field name="ConsumerWindowStates"
-               type="java.lang.String" collection="array"
+               type="java.lang.String" collection="collection"
                get-method="getConsumerWindowStates"
-               set-method="setConsumerWindowStates"
                required="false">
             <bind-xml name="supported-window-state"/>
         </field>
 
         <field name="CustomUserProfileData"
-               type="java.lang.String" collection="array"
+               type="java.lang.String" collection="collection"
                get-method="getCustomUserProfileData"
-               set-method="setCustomUserProfileData"
                required="false">
             <bind-xml name="user-profile-data"/>
         </field>
 
         <field name="RegistrationProperties"
-               type="oasis.names.tc.wsrp.v1.types.Property" collection="array"
+               type="oasis.names.tc.wsrp.v1.types.Property" collection="collection"
                get-method="getRegistrationProperties"
-               set-method="setRegistrationProperties"
                required="false">
             <bind-xml name="registration-props"/>
         </field>

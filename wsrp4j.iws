@@ -15,42 +15,7 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/IdHelper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ConsumerConfiguredPortletList.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/src/wsdl/wsrp_v1_interfaces.wsdl" afterPath="$PROJECT_DIR$/commons/src/wsdl/wsrp_v1_interfaces.wsdl" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/RegistrationList.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/WSRPServiceDescription.java" afterPath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/WSRPServiceDescription.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/persistence-xml/pom.xml" afterPath="$PROJECT_DIR$/persistence-xml/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/ws/impl/WSAxisFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/ws/impl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ConsumerPortletRegistrationList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/ProducerPersistentFactory.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/exception/WSRPXHelper.java" afterPath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/exception/WSRPXHelper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/ProducerPersistentInformationProvider.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/ws/WSFactory.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/pom.xml" afterPath="$PROJECT_DIR$/commons/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/interfaces/producer/Producer.java" afterPath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/interfaces/producer/Producer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/portlet.xml" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/portlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/util/ParameterChecker.java" afterPath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/util/ParameterChecker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/PortletDriverImpl.java" afterPath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/PortletDriverImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/InitCookieInfoImpl.java" afterPath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/InitCookieInfoImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ProducerPersistentFactoryImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-consumer/pom.xml" afterPath="$PROJECT_DIR$/commons-consumer/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ProducerPersistentInformationProviderImpl.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/UserSessionImpl.java" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/UserSessionImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/ws" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ProxyPortlet.java" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ProxyPortlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/persistence/producers/org.apache.wsrp4j.commons.consumer.driver.ProducerImpl@wsrp4j-8081.xml" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/persistence/producers/org.apache.wsrp4j.commons.consumer.driver.ProducerImpl@wsrp4j-8081.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/commons/src/wsdl/jaxws-bindings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ConsumerEnvironmentImpl.java" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ConsumerEnvironmentImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/interfaces/session/InitCookieInfo.java" afterPath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/interfaces/session/InitCookieInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/WSRPRequestImpl.java" afterPath="$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/WSRPRequestImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/ProducerImpl.java" afterPath="$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/ProducerImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/PersistentAccess.java" afterPath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/PersistentAccess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consumer-proxyportlet/pom.xml" afterPath="$PROJECT_DIR$/consumer-proxyportlet/pom.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/ws/WSFactoryFinder.java" afterPath="" />
-    </list>
+    <list default="true" readonly="true" name="Default" comment="" />
     <ignored path="wsrp4j.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
@@ -112,95 +77,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InitCookieInfoImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/InitCookieInfoImpl.java">
+      <file leaf-file-name="PersistentHandlerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/PersistentHandlerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="38" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.4300112">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProducerList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ProducerList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="13" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.25419933">
+            <state line="130" column="65" selection-start="4379" selection-end="4379" vertical-scroll-proportion="0.8973913">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyPersistentFactoryImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ProxyPersistentFactoryImpl.java">
+      <file leaf-file-name="PersistentInformationXML.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/PersistentInformationXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="44" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.38969764">
+            <state line="54" column="11" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.51652175">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSessionImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/UserSessionImpl.java">
+      <file leaf-file-name="PersistentInformationImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/PersistentInformationImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="27" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.21388578">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsumerEnvironmentImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ConsumerEnvironmentImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="52" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.47592387">
+            <state line="84" column="27" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.3078261">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyPortlet.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ProxyPortlet.java">
+      <file leaf-file-name="ConsumerPersistentInformationProviderImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ConsumerPersistentInformationProviderImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="715" column="11" selection-start="28486" selection-end="28486" vertical-scroll-proportion="0.3325868">
+            <state line="75" column="34" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.5408696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortletContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons/src/java/oasis/names/tc/wsrp/v1/types/PortletContext.java">
+      <file leaf-file-name="ProducerMapping.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/persistence/ProducerMapping.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="19" selection-start="3041" selection-end="3041" vertical-scroll-proportion="0.82530797">
+            <state line="148" column="43" selection-start="5305" selection-end="5305" vertical-scroll-proportion="1.2138836">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProxyPersistentFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/ProxyPersistentFactory.java">
+      <file leaf-file-name="ProducerImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/ProducerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="58" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0268757">
+            <state line="117" column="12" selection-start="4285" selection-end="4285" vertical-scroll-proportion="0.5408696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProducerRegistryImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ProducerRegistryImpl.java">
+      <file leaf-file-name="WSRPServiceDescription.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/WSRPServiceDescription.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="53" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.2956327">
+            <state line="66" column="69" selection-start="2558" selection-end="2579" vertical-scroll-proportion="0.8956522">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerPersistentFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/ConsumerPersistentFactory.java">
+      <file leaf-file-name="wsrp_service.wsdl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commons/src/wsdl/wsrp_service.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="37" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.6181411">
+            <state line="33" column="68" selection-start="1287" selection-end="1326" vertical-scroll-proportion="0.7084079">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsrp_v1_bindings.wsdl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commons/src/wsdl/wsrp_v1_bindings.wsdl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="183" column="47" selection-start="7231" selection-end="7252" vertical-scroll-proportion="0.41463414">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commons/src/java/oasis/names/tc/wsrp/v1/types/RegistrationData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="157" column="14" selection-start="4813" selection-end="4813" vertical-scroll-proportion="0.33214286">
               <folding />
             </state>
           </provider>
@@ -288,6 +249,66 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src/webapp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src/webapp/WEB-INF" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="wsrp4j" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="wsrp4j-proxyportlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src/webapp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src/webapp/WEB-INF" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src/webapp/WEB-INF/persistence" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="wsrp4j" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="wsrp4j-proxyportlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/axel/portlet-container/wsrp4cm/consumer-proxyportlet/src/webapp" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -763,6 +784,7 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -913,7 +935,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28218812" order="0" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" order="1" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32979852" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
@@ -990,123 +1012,121 @@
       <option name="VERSION" />
     </GetOptions>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/interfaces/producer/Producer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="35" selection-start="724" selection-end="724" vertical-scroll-proportion="0.04031355">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons/src/java/oasis/names/tc/wsrp/v1/intf/InvalidUserCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="308" selection-end="308" vertical-scroll-proportion="0.32142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/PortletDriverImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="376" column="63" selection-start="15135" selection-end="15135" vertical-scroll-proportion="0.55826086">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/PersistentAccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.30907056">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/InitCookieInfoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="38" selection-start="1561" selection-end="1561" vertical-scroll-proportion="0.4300112">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/ProxyPersistentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="58" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0268757">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/ConsumerPersistentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="37" selection-start="1692" selection-end="1692" vertical-scroll-proportion="0.6181411">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ProducerRegistryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="53" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.2956327">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ProducerList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="13" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.25419933">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/apache/wsrp4j/wsrp4j-commons-producer/0.4-SNAPSHOT/wsrp4j-commons-producer-0.4-SNAPSHOT.jar!/org/apache/wsrp4j/commons/producer/provider/driver/ConsumerPortletRegistrationImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0537514">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../.m2/repository/org/apache/wsrp4j/wsrp4j-commons-producer/0.4-SNAPSHOT/wsrp4j-commons-producer-0.4-SNAPSHOT.jar!/org/apache/wsrp4j/commons/producer/provider/driver/ConsumerConfiguredPortletImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="188" selection-end="188" vertical-scroll-proportion="0.054669704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ProxyPersistentFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="44" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.38969764">
+        <state line="51" column="44" selection-start="1743" selection-end="1743" vertical-scroll-proportion="0.6052174">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/UserSessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="27" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.21388578">
+        <state line="80" column="27" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.3321739">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ConsumerEnvironmentImpl.java">
+    <entry file="file://$PROJECT_DIR$/commons/src/java/oasis/names/tc/wsrp/v1/types/PortletContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="52" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.47592387">
+        <state line="114" column="19" selection-start="3041" selection-end="3041" vertical-scroll-proportion="1.2817391">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commons/src/java/oasis/names/tc/wsrp/v1/types/PortletContext.java">
+    <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ConsumerEnvironmentImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="19" selection-start="3041" selection-end="3041" vertical-scroll-proportion="0.82530797">
+        <state line="66" column="52" selection-start="2724" selection-end="2724" vertical-scroll-proportion="0.73913044">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/java/org/apache/wsrp4j/consumer/proxyportlet/impl/ProxyPortlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="715" column="11" selection-start="28486" selection-end="28486" vertical-scroll-proportion="0.3325868">
+        <state line="135" column="27" selection-start="5362" selection-end="5362" vertical-scroll-proportion="1.106087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/PersistentHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="65" selection-start="4379" selection-end="4379" vertical-scroll-proportion="0.8973913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/PersistentInformationXML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="11" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.51652175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/PersistentInformationImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="27" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.3078261">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/persistence-xml/src/java/org/apache/wsrp4j/persistence/xml/driver/ConsumerPersistentInformationProviderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="34" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.5408696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/classes/ExceptionMapping.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.71130437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/java/oasis/names/tc/wsrp/v1/types/RegistrationData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="14" selection-start="4813" selection-end="4813" vertical-scroll-proportion="0.33214286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consumer-proxyportlet/src/webapp/WEB-INF/persistence/ProducerMapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="148" column="43" selection-start="5305" selection-end="5305" vertical-scroll-proportion="1.2138836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons-consumer/src/java/org/apache/wsrp4j/commons/consumer/driver/ProducerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="12" selection-start="4285" selection-end="4285" vertical-scroll-proportion="0.5408696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/java/org/apache/wsrp4j/commons/persistence/driver/WSRPServiceDescription.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="69" selection-start="2558" selection-end="2579" vertical-scroll-proportion="0.8956522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/wsdl/wsrp_service.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="68" selection-start="1287" selection-end="1326" vertical-scroll-proportion="0.7084079">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commons/src/wsdl/wsrp_v1_bindings.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="47" selection-start="7231" selection-end="7252" vertical-scroll-proportion="0.41463414">
           <folding />
         </state>
       </provider>
